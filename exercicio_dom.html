@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JavaScript</title>
+
+      
+        <script>
+
+          function mudaBackground(){
+
+            
+            document.getElementById('input').style="background: yellow;"
+
+          }
+
+          function perdeFoco(){
+
+            var caracter = document.getElementById('input').value
+
+            if(caracter.lenght<3){
+
+               document.getElementById('input').style.background = "red"
+
+             } else {
+
+              document.getElementById('input').style.background = "green"
+             } 
+          }
+
+        </script>
+
+    </head>
+
+    <body>
+
+
+
+    <input  id="input" type="text" onfocus="mudaBackground()" onblur="perdeFoco()">
+    
+
+    </body>
+</html>
